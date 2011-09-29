@@ -8,7 +8,7 @@ The Apostrophe Awesome Login Plugin uses a hardcoded jQuery Template and some LE
 Usage:
 
 - When Logged Out:
-	Shift+Spacebar will bring up the login form with the username/email address field already focused for you!
+	Shift+Escape will bring up the login form with the username/email address field already focused for you!
 
 - When Logged In
 	Shift+Escape will bring up the logout confirmation prompt with the Logout button already focused for you. Just hit ENTER to logout!

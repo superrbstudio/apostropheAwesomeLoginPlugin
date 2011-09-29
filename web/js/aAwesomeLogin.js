@@ -81,7 +81,7 @@ function aAwesomeLoginConstructor()
 
 		$(window).unbind('keyup.awesome').bind('keyup.awesome', function(e){
 
-			if (e.shiftKey && e.keyCode === 32 && !window.aAwesomeLogin.rendered && !$('body').hasClass('logged-in'))
+			if (e.shiftKey && e.keyCode === 27 && !window.aAwesomeLogin.rendered && !$('body').hasClass('logged-in'))
 			{
 				window.aAwesomeLogin.renderLogin({});
 			}
