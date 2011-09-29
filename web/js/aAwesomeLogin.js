@@ -101,3 +101,7 @@ function aAwesomeLoginConstructor()
 }
 
 window.aAwesomeLogin = new aAwesomeLoginConstructor();
+
+$(document).ready(function() {
+	window.aAwesomeLogin.setupLogin({});
+});
