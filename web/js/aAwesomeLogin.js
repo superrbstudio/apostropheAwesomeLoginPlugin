@@ -81,16 +81,19 @@ function aAwesomeLoginConstructor()
 
 		$(window).unbind('keyup.awesome').bind('keyup.awesome', function(e){
 
+			// Pressing Shift+Escape when logged out
 			if (e.shiftKey && e.keyCode === 27 && !window.aAwesomeLogin.rendered && !$('body').hasClass('logged-in'))
 			{
 				window.aAwesomeLogin.renderLogin({});
 			}
 			
+			// Pressing Shift+Escape when logged in
 			if (e.shiftKey && e.keyCode === 27 && !window.aAwesomeLogin.rendered && !$('body').hasClass('logged-out'))
 			{
 				window.aAwesomeLogin.renderLogin({ template: 'logoutConfirm' });
 			}
-			
+					
+			// Pressing Escape closes the window
 			if (!e.shiftKey && e.keyCode === 27)
 			{
 				window.aAwesomeLogin.destroyLogin({});
