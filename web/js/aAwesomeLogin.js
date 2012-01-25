@@ -5,7 +5,7 @@ function aAwesomeLoginConstructor()
 
 	this.renderLogin = function(options) {
 
-		apostrophe.log('awesome.renderLogin');
+    // apostrophe.log('awesome.renderLogin');
 
 		var template = (options['template']) ? options['template'] : 'loginForm';
 		
@@ -67,14 +67,14 @@ function aAwesomeLoginConstructor()
 	};
 
 	this.destroyLogin = function(options) {
-		apostrophe.log('awesome.destroyLogin');
+    // apostrophe.log('awesome.destroyLogin');
 		$('.a-awesome-login-wrapper').remove();
 		window.aAwesomeLogin.rendered = false;
 	};
 
 	this.setupLogin = function(options) {
 
-		apostrophe.log('awesome.setupAwesomeLogin');
+    // apostrophe.log('awesome.setupAwesomeLogin');
 
 		// Setup Template
 		$( "#loginForm" ).template( "loginForm" );
